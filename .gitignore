@@ -1,0 +1,30 @@
+# .gitignore
+
+# Ignore Python virtual environment
+venv/
+*.pyc
+__pycache__/
+
+# SQLite Database files (assuming you mentioned them)
+*.sqlite
+
+# Chrome temporary folders (assuming they are named as '%something')
+%*/
+
+# OS generated files
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# IDE-specific files (for common IDEs)
+.idea/ # PyCharm
+*.code-workspace # VSCode
+.vscode/
+*.swp # Vim
+
+# Other tools
+*.log
+*.bak
+*.old
+*.tmp
+
+# Add any other files or folders you'd like to exclude from Git here
