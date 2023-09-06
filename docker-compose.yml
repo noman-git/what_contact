@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  whatsapp-contact-checker:
+    image: what_contact_image
+    build:
+      context: .
+      dockerfile: Dockerfile
+    shm_size: '2gb'  # Allocate shared memory for Chrome
+    # ports:
+    #   - "5000:5000"  # If your application runs on port 5000, adjust as necessary
+    volumes:
+      - .:/what_contact  # Maps the current directory (your project directory) to the /what_contact directory inside the container
+    environment:
+      - DISPLAY=:99  # For running Chrome in headless mode with certain configurations
